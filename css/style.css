@@ -1,3 +1,10 @@
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+nav.navbar-inverse {
+     background-color: #512DA8;
+}
 .row-header{
     margin:0px auto;
     padding:0px;
@@ -24,4 +31,13 @@ address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+}
+.navbar-brand, .nav-link{
+    color:aliceblue;
+}
+li{
+    list-style-type: none; /* Убираем маркеры */
+}
+nav ul.navbar-nav{
+    padding: 2px; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
