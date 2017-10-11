@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scc" : "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/jogesh_k_muppala/git-test#readme",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.2.2",
+    "node-sass": "^4.5.3"
   },
   "dependencies": {
     "font-awesome": "^4.7.0"
