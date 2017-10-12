@@ -4,10 +4,12 @@
   "description": "This is the Git and Node basic learning project",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "scc" : "node-sass -o css/ css/"
+    "scc": "node-sass -o css/ css/",
+    "watch:scss":"onchange 'css/*.scss' -- npm run scss",
+    "watch:all":"parallelshell 'npm run watch:scss' 'npm run lite'"  
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,9 @@
   "homepage": "https://bitbucket.org/jogesh_k_muppala/git-test#readme",
   "devDependencies": {
     "lite-server": "^2.2.2",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "font-awesome": "^4.7.0"
