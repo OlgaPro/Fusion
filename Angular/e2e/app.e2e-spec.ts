@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('con-fusion App', () => {
+describe('angular App', () => {
   let page: AppPage;
 
   beforeEach(() => {
